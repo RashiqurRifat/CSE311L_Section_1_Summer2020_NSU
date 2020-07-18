@@ -1,14 +1,15 @@
 <?php
 
-$MySQLi_connection = new MySQLi('localhost','rifat','','cse_311');
+$MySQLi_connection = new MySQLi('localhost','root','','cse_311');
 
-if($MySQLi_connection->connect_error)
+
+if ($MySQLi_connection->connect_error)
 {
-    echo "not connected, error:" .$MySQLi_connection->connect_error;
+    echo "Not Connected, error:" .$MySQLi_connection->connect_error;
 }
 else
 {
-    echo "connected";
+ echo "Connected";
 }
 
 ?>
