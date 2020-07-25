@@ -1,0 +1,13 @@
+SELECT Last_Name, Department_Id, (7*Salary) AS 'weekly salary' FROM employees
+
+SELECT Last_Name, Department_Id 
+FROM employees 
+WHERE Department_Id 
+BETWEEN 20 AND 50 
+ORDER BY First_Name DESC;
+
+SELECT Last_Name, Department_Id, (7*Salary) AS 'weekly salary' FROM employees;
+
+SELECT last_name, job_id, department_id, Hire_Date
+FROM employees
+WHERE Hire_Date BETWEEN '1998-02-20'  AND '1998-05-01'
